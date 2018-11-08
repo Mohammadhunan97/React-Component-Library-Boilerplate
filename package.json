@@ -5,7 +5,7 @@
   "main": "compiled/bundle.build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack/buildpackgit.config.j --mode production",
+    "build": "webpack --config webpack/buildpack.config.j --mode production",
     "app:serve": "webpack-dev-server --config webpack/servepack.config.js --mode development --open --hot",
     "app:build": "webpack --config webpack/servepack.config.js --mode production"
   },
