@@ -6,11 +6,12 @@
 */
 
 const path = require('path');
+const projectConfig = require('../project.config');
 
 module.exports = {
-    entry: __dirname + '/source/index.js',
+    entry: projectConfig.rootDir + '/source/index.js',
     output: {
-        path: path.join(__dirname,'/compiled'),
+        path: projectConfig.rootDir + '/compiled',
         filename: 'bundle.build.js'
     },
     module: {
